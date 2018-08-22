@@ -10,12 +10,14 @@
         <title>Exercice 7</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <?php 
-                        echo date('d-m-Y', strtotime('+20 days'));
-                    ?>
+                <div class="offset-4 col-4">
+                    <p>
+                        Aujourd'hui, nous sommes le <?php echo date('d-m-Y'); ?>.
+                        <br />
+                        Dans 20 jours, nous serons le <?php echo date('d-m-Y', strtotime('+20 days')) ?>.
+                    </p>
                 </div>
             </div>
         </div>
